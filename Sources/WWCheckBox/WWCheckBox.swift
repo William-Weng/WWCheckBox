@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol WWCheckboxDelegate {
+public protocol WWCheckboxDelegate {
     func didTouched(_ checkbox: WWCheckBox, indexPath: IndexPath, isSelected: Bool)
 }
 
@@ -35,8 +35,8 @@ open class WWCheckBox: UIView {
     @IBOutlet var contentView: UIView!
     @IBOutlet weak var innerView: UIView!
     
-    var delegate: WWCheckboxDelegate?
-    var indexPath: IndexPath = []
+    public var delegate: WWCheckboxDelegate?
+    public var indexPath: IndexPath = []
     
     private let radius = 8.0
     private var checkBoxLayer: CAShapeLayer?
