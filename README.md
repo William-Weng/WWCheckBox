@@ -1,2 +1,3 @@
 # WWCheckBox
-HTML-like CheckBox function
+
+A description of this package.
