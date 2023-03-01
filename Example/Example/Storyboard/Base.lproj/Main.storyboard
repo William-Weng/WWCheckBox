@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dyl-0f-9pf">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ht9-eg-hhJ">
+                                <rect key="frame" x="16" y="108" width="382" height="124"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="66g-w8-GdE">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="36"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iCy-SM-1Ah" customClass="MyCheckBox" customModule="Example" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="iCy-SM-1Ah" secondAttribute="height" id="468-AB-vWY"/>
+                                                    <constraint firstAttribute="height" constant="36" id="mGi-Gf-YTL"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSelected" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isUsedAnimation" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="animationDuration">
+                                                        <real key="value" value="0.25"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="startPointOffsetX">
+                                                        <real key="value" value="9"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="startPointOffsetY">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerPointOffsetX">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerPointOffsetY">
+                                                        <real key="value" value="-7"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="endPointOffsetX">
+                                                        <real key="value" value="-8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="endPointOffsetY">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="茉綠茶凍拿鐵" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="63g-QK-M8s">
+                                                <rect key="frame" x="44" y="0.0" width="338" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="aSz-kO-Gi0">
+                                        <rect key="frame" x="0.0" y="44" width="382" height="36"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eol-lY-Nfr" customClass="MyCheckBox" customModule="Example" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="B76-Gf-WZd"/>
+                                                    <constraint firstAttribute="width" secondItem="eol-lY-Nfr" secondAttribute="height" id="Dcx-Uh-m7l"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSelected" value="NO"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isUsedAnimation" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="animationDuration">
+                                                        <real key="value" value="0.25"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="startPointOffsetX">
+                                                        <real key="value" value="9"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="startPointOffsetY">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerPointOffsetX">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerPointOffsetY">
+                                                        <real key="value" value="-7"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="endPointOffsetX">
+                                                        <real key="value" value="-8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="endPointOffsetY">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                                        <color key="value" systemColor="systemPurpleColor"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="checkedBackgroundColor">
+                                                        <color key="value" systemColor="systemTealColor"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="茉綠茶凍綠茶拿鐵" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YxB-qk-jKA">
+                                                <rect key="frame" x="44" y="0.0" width="338" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="168-5I-XY0">
+                                        <rect key="frame" x="0.0" y="88" width="382" height="36"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bpo-Q3-dOA" customClass="MyCheckBox" customModule="Example" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="K8i-Vh-jKL"/>
+                                                    <constraint firstAttribute="width" secondItem="Bpo-Q3-dOA" secondAttribute="height" id="PCW-bK-Bkg"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSelected" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isUsedAnimation" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="animationDuration">
+                                                        <real key="value" value="0.25"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="startPointOffsetX">
+                                                        <real key="value" value="9"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="startPointOffsetY">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerPointOffsetX">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerPointOffsetY">
+                                                        <real key="value" value="-7"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="endPointOffsetX">
+                                                        <real key="value" value="-8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="endPointOffsetY">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="checkedBackgroundColor">
+                                                        <color key="value" systemColor="systemGreenColor"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                                        <color key="value" systemColor="systemOrangeColor"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暗黑水晶奶茶" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y6t-1V-Xli">
+                                                <rect key="frame" x="44" y="0.0" width="338" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ht9-eg-hhJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="0LB-0G-14P"/>
+                            <constraint firstItem="ht9-eg-hhJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="afM-J7-zar"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ht9-eg-hhJ" secondAttribute="trailing" constant="16" id="mKS-EY-H07"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="nvs-zi-2RQ"/>
+                    <connections>
+                        <outlet property="myCheckBox1" destination="iCy-SM-1Ah" id="YjV-EC-2bY"/>
+                        <outlet property="myCheckBox2" destination="eol-lY-Nfr" id="6Se-vD-mPq"/>
+                        <outlet property="myCheckBox3" destination="Bpo-Q3-dOA" id="gDx-MY-Bfu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1023.1884057971015" y="93.75"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0L2-KY-cli">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dyl-0f-9pf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0CM-fo-0qj">
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="NaE-jF-wZ5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nue-nb-ZqT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113.04347826086958" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
